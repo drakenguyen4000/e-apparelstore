@@ -5,7 +5,7 @@ const express = require("express"),
   jwt = require("jsonwebtoken"),
   auth = require("../../middleware/auth"),
   User = require("../../models/User");
-
+  
 //Index Route
 router.post("/auth", (req, res) => {
   const { name, password } = req.body;
