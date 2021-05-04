@@ -549,8 +549,11 @@ input {
   font-family: "Arial" !important;
   font-weight: 800 !important;
   background: orange !important;
-  border: rgb(238, 176, 5) solid 1px !important;
-  /* border-radius: 100px !important; */
+  border: rgb(255, 153, 0) solid 2px !important;
+}
+
+.modal-header {
+  background: orange;
 }
 
 .inline-cc {

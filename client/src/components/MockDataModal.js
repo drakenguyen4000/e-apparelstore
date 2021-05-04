@@ -30,7 +30,7 @@ const MockDataModal = () => {
         </Button>
       </Link>
       <Modal isOpen={state.modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}><strong>Mock Credit Card Data</strong></ModalHeader>
+        <ModalHeader className="modal-header" toggle={toggle}><strong>Mock Credit Card Data</strong></ModalHeader>
         <ModalBody>
           <Form>
             <FormGroup>
