@@ -2,7 +2,6 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 const FeatureBar = (props) => {
-  //grab list from mapStateToProps
   //find first items not caterogy men - i.e. and display
   const { list } = props;
   const { selectedCategory } = props;
@@ -76,7 +75,6 @@ const FeatureBar = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  // console.log(state);
   return {
     list: state.item.items,
     selectedCategory: state.item.category,

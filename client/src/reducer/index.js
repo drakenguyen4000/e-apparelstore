@@ -1,4 +1,3 @@
-// client/src/reducers/index.js
 import { combineReducers } from "redux";
 import { persistReducer } from "redux-persist";
 import itemReducer from "./itemReducer";

@@ -5,7 +5,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  return <div className=" homepage">Find Your Style</div>;
+  return <main className=" homepage">eApparel<p className="slogan">Find Your Style</p></main>;
 };
 
 export default Home;

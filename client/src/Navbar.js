@@ -10,13 +10,13 @@ const Navbar = (props) => {
 
   const authLinks = (
     <>
-      <li className="nav__welcome">
-        {user ? `Welcome ${user.name}!` : null}
+      <li className="nav__welcome">{user ? `Welcome ${user.name}!` : null}</li>
+      <li className="nav__item nav__item-right">
+        <Link className="nav__item-right-color" to={user ? `/eapparel/orderhistory/${user._id}` : "#"} replace>
+          History
+        </Link>
       </li>
-      <Link to={user ? `/eapparel/orderhistory/${user._id}` : "#"} replace>
-        <li className="nav__item navbar__item-right">History</li>
-      </Link>
-      <li className="nav__item navbar__item-right">
+      <li className="nav__item nav__item-right">
         <Logout />
       </li>
     </>
@@ -27,18 +27,24 @@ const Navbar = (props) => {
       <li className="nav__item">
         <RegisterModal />
       </li>
-      <Link className="nav__item" to={`/eapparel/login`} replace>
-        <li>Login</li>
-      </Link>
+      <li>
+        <Link className="nav__item" to={`/eapparel/login`} replace>
+          Login
+        </Link>
+      </li>
     </>
   );
 
   return (
     <nav className="nav">
       <ul className="navbars nav__top">
-      {isAuthenticated ? authLinks : guestLinks}
-          <Link className="nav__item shopping__cart__btn" to={`/eapparel/shoppingcart`} replace>
-          <li>
+        {isAuthenticated ? authLinks : guestLinks}
+        <li className="nav__item shopping__cart__btn">
+          <Link
+            
+            to={`/eapparel/shoppingcart`}
+            replace
+          >
             <span className="shopping-cart-btn">
               <span className="fa-layers fa-fw fa-lg">
                 <i className="fas fa-shopping-cart fa-lg"></i>
@@ -50,25 +56,35 @@ const Navbar = (props) => {
                 </span>
               </span>
             </span>
-            </li>
-          </Link>
+          </Link>{" "}
+        </li>
       </ul>
       <ul className="navbars nav__bottom">
-        <Link className="nav__item" to={`/eapparel`} replace>
-          <li>eApparel</li>
-        </Link>
-        <Link className="nav__item" to={`/eapparel/men`} replace>
-          <li >Men</li>
-        </Link>
-        <Link className="nav__item" to={`/eapparel/women`} replace>
-          <li >Women</li>
-        </Link>
-        <Link className="nav__item" to={`/eapparel/boys`} replace>
-          <li>Boys</li>
-        </Link>
-        <Link className="nav__item" to={`/eapparel/girls`} replace>
-          <li>Girls</li>
-        </Link>
+        <li>
+          <Link className="nav__item" to={`/eapparel`} replace>
+            eApparel
+          </Link>
+        </li>
+        <li>
+          <Link className="nav__item" to={`/eapparel/men`} replace>
+            Men
+          </Link>
+        </li>
+        <li>
+          <Link className="nav__item" to={`/eapparel/women`} replace>
+            Women
+          </Link>
+        </li>
+        <li>
+          <Link className="nav__item" to={`/eapparel/boys`} replace>
+            Boys
+          </Link>
+        </li>
+        <li>
+          <Link className="nav__item" to={`/eapparel/girls`} replace>
+            Girls
+          </Link>
+        </li>
       </ul>
     </nav>
   );
