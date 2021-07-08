@@ -29,7 +29,7 @@ const CheckOut = (props) => {
   //Update Item Quantity in Cart
   const subTotal = () => {
     let sum = 0;
-    cart.map((item) => {
+    cart.forEach((item) => {
       return (sum += item.quantity * item.price);
     });
     return parseFloat(sum.toFixed(2));
