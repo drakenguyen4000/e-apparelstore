@@ -83,6 +83,7 @@ export const checkOut = (token, order) => (dispatch, getState) => {
     .catch((err) => console.log(err));
 };
 
+//Updates/refreshes feature bar 
 export const updateFeature = (category) => (dispatch) => {
   dispatch({
     type: "FEATURE_UPDATE",
@@ -90,6 +91,7 @@ export const updateFeature = (category) => (dispatch) => {
   });
 };
 
+//Get order history
 export const getHistory = (id) => (dispatch) => {
   axios
     .get(`/eapparel/orderhistory/${id}`)

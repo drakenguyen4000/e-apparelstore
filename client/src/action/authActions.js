@@ -99,6 +99,7 @@ export const message = (msg) => (dispatch) => {
   });
 };
 
+//Clear Message
 export const clearMessage = () => (dispatch) => {
   dispatch({
     type: CLEAR_MESSAGE,

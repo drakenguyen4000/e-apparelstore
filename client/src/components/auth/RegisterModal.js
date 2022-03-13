@@ -53,11 +53,12 @@ const RegisterModal = (props) => {
         <ModalBody>
           <Form onSubmit={onSubmit}>
             <FormGroup>
+              
               <Label for="name">Name</Label>
               <Input
                 type="text"
                 name="name"
-                id="name"
+                // id="name"
                 placeholder="Name"
                 onChange={onChange}
                 className="input-margin"
@@ -66,7 +67,7 @@ const RegisterModal = (props) => {
               <Input
                 type="password"
                 name="password"
-                id="password"
+                // id="password"
                 placeholder="Password"
                 onChange={onChange}
                 className="input-margin"
