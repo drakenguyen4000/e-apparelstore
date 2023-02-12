@@ -2,7 +2,10 @@
 
 ### Project Description
 - This store app allows users to create an account, make orders, make payments using a credit card, and review their order history.  
-- This app uses React for it's frontend, Redux state management to store send/receive data with the server side, Node to handle orders on the backend, and MongoDB database to store accounts and order details.  
+- The store includes an ad bar on the right that will randomly display clothing from a different department than the current department being viewed by the customer. 
+- It also comes with a shopping cart indicating the number of items already added and allows the customer to view their cart and change their order before checking out.
+
+- This app uses React for it's frontend, Redux state management to store send/receive data with the server side, Node to handle orders on the backend, and MongoDB database to store accounts and order details. 
 
 ### My motivation for this app?  
 - I wanted to challenge myself to build an app that used Redux state management. 
