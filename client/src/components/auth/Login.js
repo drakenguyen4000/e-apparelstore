@@ -37,6 +37,8 @@ const Login = (props) => {
             type="text"
             name="name"
             id="name"
+            minlength="6"
+            maxLength="20"
             placeholder="Username"
             onChange={handleChange}
             value={state.name}

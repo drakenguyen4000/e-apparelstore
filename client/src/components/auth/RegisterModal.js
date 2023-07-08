@@ -53,12 +53,13 @@ const RegisterModal = (props) => {
         <ModalBody>
           <Form onSubmit={onSubmit}>
             <FormGroup>
-              
               <Label for="name">Name</Label>
               <Input
                 type="text"
                 name="name"
                 // id="name"
+                minlength="6"
+                maxLength="20"
                 placeholder="Name"
                 onChange={onChange}
                 className="input-margin"
